@@ -124,7 +124,7 @@ Consider the following flow for a buyer using Tabula:
 
 In the case that a specific LandPlot is not already stored in the database, the seller would add all of the relevant documentation. The seller is incentivized to upload accurate information, otherwise the buyer would not sign off on the transaction, meaning it would be invalid in the eyes of users on the platform who are looking for signatures from the buyers and sellers to confirm the validity of data. In this way, LandPlots would get added to the database, so eventually it would be likely a LandPlot that a purchaser wanted to purchase would already be in the system, making the purchasing process simple and seamless. 
 
-!(https://drive.google.com/file/d/12XXwI6FKsqbp1FVTtLNUZqHY9so-uiO3/view?usp=sharing)
+![Diagram](https://lh3.googleusercontent.com/ddHOH4ROuOfwYEHZWVnaFN6Ep6p4EmbZHteEjj2ERaZHtXWCH6N2NFeqdFskdtHugTiVwmKOZm7HJvR1FUjpPIREMVxkiifOOG2vVvMVD15qzIFTjmhK5qzb4PdLJQA8wlgIw5PNe2RSyXo-FO8g9UeQmwMw6Cy2PK1xGNPKtso-OgSm8N4TCzja0d-Nlm2ckjmWhxhzECnxNt7Y5rksYw2-KINFWhvhZaMLNBDtoL1hXdEHQWBYMlub2XmCw3NEPS3pv7BLSmRr9q-doqG90hCcWKr1ZeQQUHxZjV440tmLM8fZIsVFx3yZco3I_I1L5gzHQh_85JEOz5xScoH_OS4VpSsQo4fnDlqaipOmukhmFkqlidJIue8QH2fkt9asVEV3cMWMLNTB5cfOnO8lxFG3V2Zb2cIAiufhrcLjVI8nymbeL4rl1fOuMPrikV9W0nyLrzSKwkul2ydzfVNHA6IsvzJuc21oEn95NqEeOHe0vilwukKacG7RAJuMGJKLb0rMLNCaW9GsMQzwg3YWe_BU60pcNJ4H6ZTs8SAPRl_M-zB05kDK9ryEzKzQFqqr=w2394-h1488)
 
 
 
