@@ -1,5 +1,5 @@
-#H1 Tabula 
-#H6 Alexis Gauba & Zubin Koticha 
+# Tabula 
+###### Alexis Gauba & Zubin Koticha 
 
 Tabula is a solution to address land registry needs. Land ownership documentation is often inconsistent, hard to access, and susceptible to malicious alterations. Tabula presents way to create an organizational system providing both transparency and accesibility.  
 
@@ -11,14 +11,14 @@ To resolve organizational and accesibility issues, Tabula creates a central data
 
 We will be implementing the decentralized component of this solution and building a UI for interactions with the on chain verifications. 
 
-#H2 LandPlot
-#H3 Summary
+## LandPlot
+### Summary
 
 This smart contract contains the identifier for a specific plot of land and the owner and buyer signatures. It also records a history of previous owners. 
 
-#H3 Contract Details 
+### Contract Details 
 
-#H4 Storage
+#### Storage
 ```javascript address owner``` is the address of the owner of the LandPlot 
 
 ```javascript uint256 value``` is the price of a particular LandPlot
@@ -27,9 +27,9 @@ This smart contract contains the identifier for a specific plot of land and the 
 
 ```javascript mapping (address =>  address) history``` is a mapping of the address the current owner to that of the previous owner  
 
-#H4 Functions 
+#### Functions 
 
-#H5 LandPlot() 
+##### LandPlot() 
 Constructs the LandPlot object and instantiates its owner
 
 ```javascript
@@ -40,7 +40,7 @@ function LandPlot(uint256 price, bytes32 _id) public {
 }
 ```
 
-#H5 updateOwner() 
+##### updateOwner() 
 Updates the owner of the LandPlot
 
 ```javascript
@@ -51,7 +51,7 @@ function updateOwner(address newOwner) public {
 }
 ```
 
-#H5 getPreviousOwner() 
+##### getPreviousOwner() 
 Gets the previous owner of the LandPlot
 
 ```javascript
@@ -60,20 +60,20 @@ function getPreviousOwner(address oldOwner) public returns(address) {
 }
 ```
 
-#H4 Event
+#### Event
 ```event UpdatedOwner(address newOwner);``` This is emitted when a LandPlot's owner is updated.
 
-#H2 Registry 
-#H3 Summary
+## Registry 
+### Summary
 
 This smart contract keeps track of all of the LandPlots, allowing for LandPlots to be added and transacted. 
 
-#H4 Storage
+#### Storage
 ```javascript mapping (bytes32 => LandPlot) plots``` is a mapping of each LandPlot's ID to the corresponding LandPlot to keep track of all LandPlots
 
-#H4 Mofidier
+#### Mofidier
 
-#H5 checkValue()
+##### checkValue()
 This modifier ensures that the amount being paid is the cost of the LandPlot
 
 ```javascript modifier checkValue(uint amount) {
@@ -82,9 +82,9 @@ This modifier ensures that the amount being paid is the cost of the LandPlot
 }
 ```
 
-#H4 Functions 
+#### Functions 
 
-#H5 Registry() 
+##### Registry() 
 Initializes a Registry 
 
 ```javascript
@@ -92,7 +92,7 @@ function Registry public {
 }
 ```
 
-#H5 addPlot() 
+##### addPlot() 
 Adds a Plot to the registry 
 
 ```javascript
@@ -102,7 +102,7 @@ function addPlot(uint256 _price, bytes32 _id) public {
 }
 ```
 
-#H5 buyPlot()
+##### buyPlot()
 Allows a buyer to purchase a Plot.
 
 ```javascript
@@ -113,10 +113,10 @@ function buyPlot(bytes32 _id) checkValue(msg.sender.balance) public {
 }
 ```
 
-#H4 Event
+#### Event
 ```event LogSold(address newOwner, uint256 id);``` This is emitted when a LandPlot is purchased
 
-#H2 Frontend & UPort Integration 
+## Frontend & UPort Integration 
 The frontend interface will use React.js and present a UI for buyers and sellers view plots of land, add plots of land, purchase plots of land, and sign transactions using UPort. 
 
 
