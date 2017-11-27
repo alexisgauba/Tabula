@@ -19,13 +19,13 @@ This smart contract contains the identifier for a specific plot of land and the 
 ### Contract Details 
 
 #### Storage
-```javascript address owner``` is the address of the owner of the LandPlot 
+```address owner``` is the address of the owner of the LandPlot 
 
-```javascript uint256 value``` is the price of a particular LandPlot
+```uint256 value``` is the price of a particular LandPlot
 
-```javascript bytes32 ID``` is the land identifier of the LandPlot 
+```bytes32 ID``` is the land identifier of the LandPlot 
 
-```javascript mapping (address =>  address) history``` is a mapping of the address the current owner to that of the previous owner  
+```mapping (address =>  address) history``` is a mapping of the address the current owner to that of the previous owner  
 
 #### Functions 
 
