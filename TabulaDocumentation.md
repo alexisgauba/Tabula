@@ -69,7 +69,7 @@ function getPreviousOwner(address oldOwner) public returns(address) {
 This smart contract keeps track of all of the LandPlots, allowing for LandPlots to be added and transacted. 
 
 #### Storage
-```javascript mapping (bytes32 => LandPlot) plots``` is a mapping of each LandPlot's ID to the corresponding LandPlot to keep track of all LandPlots
+```mapping (bytes32 => LandPlot) plots``` is a mapping of each LandPlot's ID to the corresponding LandPlot to keep track of all LandPlots
 
 #### Mofidier
 
