@@ -1,5 +1,7 @@
-var SimpleStorage = artifacts.require("./SimpleStorage.sol");
+var LandPlot = artifacts.require("./LandPlot.sol");
+var Registry = artifacts.require("./Registry.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(SimpleStorage);
+  deployer.deploy(LandPlot);
+  deployer.deploy(Registry);
 };
